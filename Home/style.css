@@ -1,0 +1,154 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    font-family: 'Rubik Lines', sans-serif;
+}
+
+.header {
+    margin: 10px;
+}
+
+.project-nav {
+    flex-grow: 2; /* Allows the navigation to grow twice as much as the name and about sections */
+    text-align: center; /* Centers the links within the project-nav */
+}
+
+.project-nav a {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: bold;
+}
+
+.project-nav a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+.about {
+    text-align: right; /* Aligns the about link to the right */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.navIndex, .navIndex:visited {
+    color: #f9f9f9; /* Sets the color of the link to white */
+    text-decoration: none; /* Removes the underline from the link */
+}
+
+.navIndex:hover, .navIndex:focus {
+    color: #ffcc00;/* Lighter shade when hovering or focused for better user interaction */
+}
+
+/* Hide the dropdowns by default and position them */
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    min-width: 150px; /* Set minimum width for dropdown */
+    background-color: #fff; /* Dropdown background color */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: for dropdown shadow */
+    z-index: 100; /* Make sure the dropdown is on top of other elements */
+  }
+
+  /* Style the dropdown links */
+.dropdown a {
+    color: #333; /* Dropdown link color */
+    padding: 8px 12px; /* Dropdown link padding */
+    display: block; /* Makes the whole area clickable */
+    background-color: #f9f9f9; /* Dropdown link background color */
+  }
+
+.project-nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block; /* Makes the whole area clickable */
+  }
+
+.project-nav li {
+    position: relative; /* Needed for absolute positioning of dropdown */
+    display: inline-block; /* For horizontal menu */
+  }
+
+.project-nav li:hover .dropdown {
+    display: block;
+}
+
+.project-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+#main-content {
+    margin: 10PX;
+    color: white; /* Sets the text color to white */
+    /* Add other styles for main-content here if needed */
+}
+
+#interactive-image-container {
+    position: relative;
+    margin-top: 5vh;
+    width: 100%;
+    height: 60vh; /* 60% of the viewport height */
+    text-align: center;
+    background-color: #000;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+#interactive-image {
+    max-height: 100%;
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    height: auto;
+    width: auto;
+}
+
+/* Positioning the description */
+#description {
+    margin: 20px;
+    z-index: 10; /* Ensure it's above other elements */
+    max-width: calc(50% - 20px); /* Adjust the width to not overlap with the image */
+}
+
+/* Positioning the prompt at the bottom right corner */
+#prompt {
+    margin: 20px;
+    z-index: 10; /* Ensure it's above other elements */
+    max-width: calc(50% - 20px); /* Adjust the width to not overlap with the image */
+}
+
+#left-button, #right-button {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1000;
+    text-align: center; /* Center text within the buttons */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+#left-button:hover, #right-button:hover {
+    color: #ffcc00; /* This will change the background color on hover */
+}
+
+
+#left-button {
+    left: 10px;
+    background-color: #000;
+}
+
+#right-button {
+    right: 10px;
+    background-color: #000;
+}
+
