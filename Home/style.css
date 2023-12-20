@@ -53,16 +53,16 @@ html, body {
     top: 100%;
     min-width: 150px; /* Set minimum width for dropdown */
     background-color: #fff; /* Dropdown background color */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: for dropdown shadow */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,2); /* Optional: for dropdown shadow */
     z-index: 100; /* Make sure the dropdown is on top of other elements */
   }
 
   /* Style the dropdown links */
 .dropdown a {
-    color: #333; /* Dropdown link color */
+    color: #000; /* Dropdown link color */
     padding: 8px 12px; /* Dropdown link padding */
     display: block; /* Makes the whole area clickable */
-    background-color: #f9f9f9; /* Dropdown link background color */
+    background-color: #FFF; /* Dropdown link background color */
   }
 
 .project-nav a {
